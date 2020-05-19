@@ -1,0 +1,150 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta viewport="device=device-weidth";>
+		<title>Css 12 grid try</title>
+
+
+		<style>
+		/*Base Style */
+		* {
+			box-sizing: border-box;
+
+		}	
+
+		h1 {
+			margin-top: 15px;
+			margin-bottom: 15 px;
+			margin-left: 5px;
+			margin-right: 5px;
+			text-align: center;
+			border: 5px black solid;
+			padding: 15px;
+		}
+
+		p {
+			width: 90%;
+			border: 3px black solid;
+			background-color: yellow;
+			margin-right: auto;
+			margin-left: auto;
+			font-family: cursive;
+			color: black; 
+			border-collapse: all;
+			text-align: center;
+			padding: 5px;
+
+		}
+		
+		/*
+		p:nth-child (even){
+			background: yellow;
+		} 								======>>> Doesn't work
+		
+		p.item : nth-child(even)
+		{
+			background: yellow;
+		}*/
+
+		.row {
+			width: 100%;
+		}
+
+		@media(min-width: 1200px){
+			.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+				float: left;
+				border: 2px green solid;
+			}
+		}
+		.col-lg-1 {
+			width: 8.33%;
+		}
+		.col-lg-2 {
+			width: 16.66%;
+		}
+		.col-lg-3 {
+			width: 25%;
+		}
+		.col-lg-4 {
+			width: 33.32%;
+		}
+		.col-lg-5 {
+			width: 41.65%;
+		}
+		.col-lg-6 {
+			width: 50%;
+		}
+		.col-lg-7 {
+			width: 58.32%;
+		}
+		.col-lg-8 {
+			width: 66.66%;
+		}
+		.col-lg-9 {
+			width: 75%;
+		}
+		.col-lg-10 {
+			width: 83.3%;
+		}
+		.col-lg-11 {
+			width: 91.66%;
+		}
+		.col-lg-12 {
+			width: 100%;
+		}
+
+
+		</style>
+	</head>
+
+	<body>
+		<div>
+		<h1>My First attemp</h1>
+
+		<div class="row">
+			<div class="col-lg-12"><p>Item1</p></div>	
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6"><p>Item1</p></div>	
+			<div class="col-lg-6"><p>Item2</p></div>
+		</div>	
+
+		<div class="row">
+			<div class="col-lg-3"><p>Item1</p></div>
+			<div class="col-lg-3"><p>Item2</p></div>	
+			<div class="col-lg-3"><p>Item3</p></div>
+			<div class="col-lg-3"><p>Item4</p></div>
+		</div>	
+
+		<div class="row">
+			<div class="col-lg-2"><p>Item1</p></div>
+			<div class="col-lg-2"><p>Item2</p></div>	
+			<div class="col-lg-2"><p>Item3</p></div>
+			<div class="col-lg-2"><p>Item4</p></div>
+			<div class="col-lg-2"><p>Item5</p></div>
+			<div class="col-lg-2"><p>Item6</p></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"><p>Item1</p></div>	
+			<div class="col-lg-1"><p>Item2</p></div>
+			<div class="col-lg-1"><p>Item3</p></div>
+			<div class="col-lg-1"><p>Item4</p></div>
+			<div class="col-lg-1"><p>Item5</p></div>
+			<div class="col-lg-1"><p>Item6</p></div>
+			<div class="col-lg-1"><p>Item7</p></div>
+			<div class="col-lg-1"><p>Item8</p></div>
+			<div class="col-lg-1"><p>Item9</p></div>
+			<div class="col-lg-1"><p>Item10</p></div>
+			<div class="col-lg-1"><p>Item11</p></div>
+			<div class="col-lg-1"><p>Item12</p></div>
+		</div>
+	</div>
+	<h2  align="center" > Finally done </h2>
+
+
+
+	</body>
+</html>
