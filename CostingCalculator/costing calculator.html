@@ -1,0 +1,48 @@
+<DOCTYPE html>
+<html>
+<body>
+	<h1>
+		Costing Calculator 
+	</h1>
+	
+	CBM <input type="text" id="CBM">
+	<br><br>
+
+	G.W <input type="text" id="G.W">
+	<br><br>
+	<button onclick="cal_vw()">Calculate </button>
+	<br>
+	<h3 style="color: purple" id="result1"></h3>
+	<h3 style="color: blue" id="result2"></h3>
+	<h3 style="color: green" id="result3"></h3>
+	
+
+
+</body>
+ <script>
+ 	function cal_vw() {
+ 		var cbm=document.getElementById('CBM').value;
+ 		var gw=document.getElementById('G.W').value;
+
+ 		var result_vw=parseFloat(cbm)*167;
+ 		var temp1=parseFloat(result_vw)*29*12.5;
+ 		var temp2=parseFloat(temp1)+parseFloat(gw)*135;
+ 		var gw_costing=parseFloat(temp2)/parseFloat(gw);
+ 		var vw_costing=parseFloat(temp2)/parseFloat(result_vw);
+
+ 		if (!isNaN (result_vw)) 
+ 		{
+ 			document.getElementById("result1").innerHTML="V.W:"+result_vw;
+ 		}
+
+ 		if (!isNaN (gw_costing)) 
+ 		{
+ 			document.getElementById("result2").innerHTML="G.W Costing:"+gw_costing.toFixed(4);
+ 		}
+ 		if (!isNaN (vw_costing)) 
+ 		{
+ 			document.getElementById("result3").innerHTML="V.W Costing:"+vw_costing.toFixed(4);
+ 		}
+ 	}
+ </script>
+</html>
